@@ -1,26 +1,25 @@
-# Customer Churn Analysis
+📊 Customer Churn Analysis Project
 
-##  Objective
-Analyze customer churn and identify high-risk customers.
+🔍 Overview
 
-## Tools Used
-- MySQL
+This project analyzes customer churn behavior using SQL, Excel, and Tableau.
 
-##  Data Cleaning
-- Handled missing values in TotalCharges
-- Converted data types
-- Removed inconsistencies using TRIM
+🛠 Tools Used
+	•	MySQL (Data Cleaning & EDA)
+	•	Microsoft Excel (Dashboard)
+	•	Tableau (Visualization)
 
-##  Feature Engineering
-- Created customer segments
-- Developed risk levels
+📈 Key Insights
+	•	Month-to-month contracts have highest churn
+	•	Short tenure customers churn more
+	•	High monthly charges increase churn risk
 
-##  Analysis
-- Churn rate
-- Revenue analysis
-- Risk segmentation
+📊 Dashboard
+📂 Project Structure
+	•	DATA → Raw dataset
+	•	SQL → Queries and analysis
+	•	EXCEL → Dashboard file
 
-##  Key Insights
-- Month-to-month customers have highest churn
-- High charges increase churn risk
-- New customers are more likely to churn
+🚀 Conclusion
+
+This project helps identify key factors affecting customer churn and provides actionable insights for business decision-making.
