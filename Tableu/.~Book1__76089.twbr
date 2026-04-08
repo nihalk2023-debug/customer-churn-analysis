@@ -1,0 +1,1873 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cleaned_churn.csv using sql' inline='true' name='federated.1j3duu017arbrh1dxwnko1el29qr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned_churn.csv using sql' name='textscan.1p4gpbe098n6ce11audt61immjz9'>
+            <connection class='textscan' directory='/Users/guest1/Documents/Customer-Churn-Analysis' filename='cleaned_churn.csv using sql.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1p4gpbe098n6ce11audt61immjz9' name='cleaned_churn.csv using sql.csv' table='[cleaned_churn.csv using sql#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='customerID' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='integer' name='SeniorCitizen' ordinal='2' />
+            <column datatype='string' name='Partner' ordinal='3' />
+            <column datatype='string' name='Dependents' ordinal='4' />
+            <column datatype='integer' name='tenure' ordinal='5' />
+            <column datatype='string' name='PhoneService' ordinal='6' />
+            <column datatype='string' name='MultipleLines' ordinal='7' />
+            <column datatype='string' name='InternetService' ordinal='8' />
+            <column datatype='string' name='OnlineSecurity' ordinal='9' />
+            <column datatype='string' name='OnlineBackup' ordinal='10' />
+            <column datatype='string' name='DeviceProtection' ordinal='11' />
+            <column datatype='string' name='TechSupport' ordinal='12' />
+            <column datatype='string' name='StreamingTV' ordinal='13' />
+            <column datatype='string' name='StreamingMovies' ordinal='14' />
+            <column datatype='string' name='Contract' ordinal='15' />
+            <column datatype='string' name='PaperlessBilling' ordinal='16' />
+            <column datatype='string' name='PaymentMethod' ordinal='17' />
+            <column datatype='real' name='MonthlyCharges' ordinal='18' />
+            <column datatype='real' name='TotalCharges' ordinal='19' />
+            <column datatype='string' name='Churn' ordinal='20' />
+            <column datatype='string' name='customer_segment' ordinal='21' />
+            <column datatype='string' name='risk_level' ordinal='22' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customerID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customerID]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>customerID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SeniorCitizen</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SeniorCitizen]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>SeniorCitizen</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Partner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Partner]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>Partner</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dependents</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Dependents]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>Dependents</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tenure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tenure]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>tenure</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PhoneService</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PhoneService]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>PhoneService</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MultipleLines</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MultipleLines]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>MultipleLines</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InternetService</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[InternetService]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>InternetService</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnlineSecurity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OnlineSecurity]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>OnlineSecurity</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnlineBackup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OnlineBackup]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>OnlineBackup</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DeviceProtection</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DeviceProtection]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>DeviceProtection</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TechSupport</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TechSupport]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>TechSupport</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StreamingTV</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StreamingTV]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>StreamingTV</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StreamingMovies</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StreamingMovies]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>StreamingMovies</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contract</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Contract]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>Contract</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaperlessBilling</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PaperlessBilling]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>PaperlessBilling</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaymentMethod</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PaymentMethod]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>PaymentMethod</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthlyCharges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MonthlyCharges]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>MonthlyCharges</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalCharges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalCharges]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>TotalCharges</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Churn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Churn]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>Churn</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_segment]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>customer_segment</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>risk_level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[risk_level]</local-name>
+            <parent-name>[cleaned_churn.csv using sql.csv]</parent-name>
+            <remote-alias>risk_level</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Churn Flag' datatype='integer' name='[Calculation_4336122073761480704]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Churn] = &quot;Yes&quot; THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Churn Rate' datatype='real' default-format='p0.00%' name='[Calculation_4336122073761636353]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Calculation_4336122073761480704]) / COUNT([customerID])' />
+      </column>
+      <column caption='Tenure Group' datatype='string' name='[Calculation_4336122073761927170]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [tenure] &lt; 12 THEN &quot;Short&quot;&#10;ELSEIF [tenure] &lt;= 48 THEN &quot;Medium&quot;&#10;ELSE &quot;Long&quot;&#10;END' />
+      </column>
+      <column caption='Customer segment' datatype='string' name='[Calculation_4336122073762050051]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [MonthlyCharges] &gt; 80 THEN &quot;High Value&quot;&#10;ELSEIF [MonthlyCharges] &gt; 40 THEN &quot;Medium Value&quot;&#10;ELSE &quot;Low Value&quot;&#10;END' />
+      </column>
+      <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+      <column caption='Device Protection' datatype='string' name='[DeviceProtection]' role='dimension' type='nominal' />
+      <column caption='Internet Service' datatype='string' name='[InternetService]' role='dimension' type='nominal' />
+      <column caption='Monthly Charges' datatype='real' name='[MonthlyCharges]' role='measure' type='quantitative' />
+      <column caption='Multiple Lines' datatype='string' name='[MultipleLines]' role='dimension' type='nominal' />
+      <column caption='Online Backup' datatype='string' name='[OnlineBackup]' role='dimension' type='nominal' />
+      <column caption='Online Security' datatype='string' name='[OnlineSecurity]' role='dimension' type='nominal' />
+      <column caption='Paperless Billing' datatype='string' name='[PaperlessBilling]' role='dimension' type='nominal' />
+      <column caption='Payment Method' datatype='string' name='[PaymentMethod]' role='dimension' type='nominal' />
+      <column caption='Phone Service' datatype='string' name='[PhoneService]' role='dimension' type='nominal' />
+      <column caption='Senior Citizen' datatype='integer' name='[SeniorCitizen]' role='measure' type='quantitative' />
+      <column caption='Streaming Movies' datatype='string' name='[StreamingMovies]' role='dimension' type='nominal' />
+      <column caption='Streaming TV' datatype='string' name='[StreamingTV]' role='dimension' type='nominal' />
+      <column caption='Tech Support' datatype='string' name='[TechSupport]' role='dimension' type='nominal' />
+      <column caption='Total Charges' datatype='real' name='[TotalCharges]' role='measure' type='quantitative' />
+      <column caption='cleaned_churn.csv using sql.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]' role='measure' type='quantitative' />
+      <column caption='Customer ID' datatype='string' name='[customerID]' role='dimension' type='nominal' />
+      <column caption='Customer Segment' datatype='string' name='[customer_segment]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Risk Level' datatype='string' name='[risk_level]' role='dimension' type='nominal' />
+      <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+      <column-instance column='[Churn]' derivation='None' name='[none:Churn:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/tableau-temp/#TableauTemp_11t1h8b04s8lbu15n4kl60dgo7j3.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/08/2026 01:13:03 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>customerID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customerID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customerID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>1</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SeniorCitizen</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SeniorCitizen]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SeniorCitizen</remote-alias>
+              <ordinal>2</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Partner</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Partner]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Partner</remote-alias>
+              <ordinal>3</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dependents</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Dependents]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dependents</remote-alias>
+              <ordinal>4</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tenure</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tenure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tenure</remote-alias>
+              <ordinal>5</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>72</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PhoneService</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PhoneService]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PhoneService</remote-alias>
+              <ordinal>6</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MultipleLines</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MultipleLines]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MultipleLines</remote-alias>
+              <ordinal>7</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InternetService</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[InternetService]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InternetService</remote-alias>
+              <ordinal>8</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OnlineSecurity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OnlineSecurity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OnlineSecurity</remote-alias>
+              <ordinal>9</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OnlineBackup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OnlineBackup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OnlineBackup</remote-alias>
+              <ordinal>10</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DeviceProtection</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DeviceProtection]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DeviceProtection</remote-alias>
+              <ordinal>11</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TechSupport</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TechSupport]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TechSupport</remote-alias>
+              <ordinal>12</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StreamingTV</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[StreamingTV]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StreamingTV</remote-alias>
+              <ordinal>13</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StreamingMovies</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[StreamingMovies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StreamingMovies</remote-alias>
+              <ordinal>14</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Contract</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Contract]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Contract</remote-alias>
+              <ordinal>15</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PaperlessBilling</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PaperlessBilling]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PaperlessBilling</remote-alias>
+              <ordinal>16</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PaymentMethod</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PaymentMethod]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PaymentMethod</remote-alias>
+              <ordinal>17</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MonthlyCharges</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MonthlyCharges]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MonthlyCharges</remote-alias>
+              <ordinal>18</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>656</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalCharges</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalCharges]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalCharges</remote-alias>
+              <ordinal>19</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>986</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Churn</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Churn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Churn</remote-alias>
+              <ordinal>20</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_segment</remote-alias>
+              <ordinal>21</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>risk_level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[risk_level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>risk_level</remote-alias>
+              <ordinal>22</ordinal>
+              <family>cleaned_churn.csv using sql.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Churn:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='cleaned_churn.csv using sql.csv' id='cleaned_churn.csv using sql.csv_A2954F64C6834278940DA5591154BB6D'>
+            <properties context=''>
+              <relation connection='textscan.1p4gpbe098n6ce11audt61immjz9' name='cleaned_churn.csv using sql.csv' table='[cleaned_churn.csv using sql#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='customerID' ordinal='0' />
+                  <column datatype='string' name='gender' ordinal='1' />
+                  <column datatype='integer' name='SeniorCitizen' ordinal='2' />
+                  <column datatype='string' name='Partner' ordinal='3' />
+                  <column datatype='string' name='Dependents' ordinal='4' />
+                  <column datatype='integer' name='tenure' ordinal='5' />
+                  <column datatype='string' name='PhoneService' ordinal='6' />
+                  <column datatype='string' name='MultipleLines' ordinal='7' />
+                  <column datatype='string' name='InternetService' ordinal='8' />
+                  <column datatype='string' name='OnlineSecurity' ordinal='9' />
+                  <column datatype='string' name='OnlineBackup' ordinal='10' />
+                  <column datatype='string' name='DeviceProtection' ordinal='11' />
+                  <column datatype='string' name='TechSupport' ordinal='12' />
+                  <column datatype='string' name='StreamingTV' ordinal='13' />
+                  <column datatype='string' name='StreamingMovies' ordinal='14' />
+                  <column datatype='string' name='Contract' ordinal='15' />
+                  <column datatype='string' name='PaperlessBilling' ordinal='16' />
+                  <column datatype='string' name='PaymentMethod' ordinal='17' />
+                  <column datatype='real' name='MonthlyCharges' ordinal='18' />
+                  <column datatype='real' name='TotalCharges' ordinal='19' />
+                  <column datatype='string' name='Churn' ordinal='20' />
+                  <column datatype='string' name='customer_segment' ordinal='21' />
+                  <column datatype='string' name='risk_level' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1j3duu017arbrh1dxwnko1el29qr'>
+      <datasources>
+        <datasource caption='cleaned_churn.csv using sql' name='federated.1j3duu017arbrh1dxwnko1el29qr' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1j3duu017arbrh1dxwnko1el29qr'>
+        <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+        <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+        <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+        <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+        <column-instance column='[risk_level]' derivation='None' name='[none:risk_level:nk]' pivot='key' type='nominal' />
+        <column caption='Risk Level' datatype='string' name='[risk_level]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Contract:nk]'>
+        <groupfilter function='level-members' level='[none:Contract:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:gender:nk]'>
+        <groupfilter function='level-members' level='[none:gender:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:risk_level:nk]'>
+        <groupfilter function='level-members' level='[none:risk_level:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Churn Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Churn Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_churn.csv using sql' name='federated.1j3duu017arbrh1dxwnko1el29qr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1j3duu017arbrh1dxwnko1el29qr'>
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column-instance column='[customerID]' derivation='Count' name='[cnt:customerID:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer ID' datatype='string' name='[customerID]' role='dimension' type='nominal' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Churn]' derivation='None' name='[none:Churn:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[risk_level]' derivation='None' name='[none:risk_level:nk]' pivot='key' type='nominal' />
+            <column caption='Risk Level' datatype='string' name='[risk_level]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Contract:nk]</column>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:gender:nk]</column>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:risk_level:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Churn:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1j3duu017arbrh1dxwnko1el29qr].[cnt:customerID:qk]</rows>
+        <cols>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Churn:nk]</cols>
+      </table>
+      <simple-id uuid='{F769C651-B8BE-47AA-824F-E43766A5A42D}' />
+    </worksheet>
+    <worksheet name='Churn Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='22'>Churn Rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_churn.csv using sql' name='federated.1j3duu017arbrh1dxwnko1el29qr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1j3duu017arbrh1dxwnko1el29qr'>
+            <column caption='Churn Flag' datatype='integer' name='[Calculation_4336122073761480704]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Churn] = &quot;Yes&quot; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Churn Rate' datatype='real' default-format='p0.00%' name='[Calculation_4336122073761636353]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_4336122073761480704]) / COUNT([customerID])' />
+            </column>
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column caption='Customer ID' datatype='string' name='[customerID]' role='dimension' type='nominal' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[risk_level]' derivation='None' name='[none:risk_level:nk]' pivot='key' type='nominal' />
+            <column caption='Risk Level' datatype='string' name='[risk_level]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_4336122073761636353]' derivation='User' name='[usr:Calculation_4336122073761636353:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Contract:nk]</column>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:gender:nk]</column>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:risk_level:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1j3duu017arbrh1dxwnko1el29qr].[usr:Calculation_4336122073761636353:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='20'>&lt;</run>
+                <run fontsize='20'>[federated.1j3duu017arbrh1dxwnko1el29qr].[usr:Calculation_4336122073761636353:qk]</run>
+                <run fontsize='20'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{43711F40-E178-4B89-90F6-0ABDCC01200B}' />
+    </worksheet>
+    <worksheet name='Churn by Contract'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Churn by Contract</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_churn.csv using sql' name='federated.1j3duu017arbrh1dxwnko1el29qr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1j3duu017arbrh1dxwnko1el29qr'>
+            <column caption='Churn Flag' datatype='integer' name='[Calculation_4336122073761480704]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Churn] = &quot;Yes&quot; THEN 1 ELSE 0 END' />
+            </column>
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Churn]' derivation='None' name='[none:Churn:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[risk_level]' derivation='None' name='[none:risk_level:nk]' pivot='key' type='nominal' />
+            <column caption='Risk Level' datatype='string' name='[risk_level]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_4336122073761480704]' derivation='Sum' name='[sum:Calculation_4336122073761480704:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Contract:nk]</column>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:gender:nk]</column>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:risk_level:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Churn:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Contract:nk]</rows>
+        <cols>[federated.1j3duu017arbrh1dxwnko1el29qr].[sum:Calculation_4336122073761480704:qk]</cols>
+      </table>
+      <simple-id uuid='{3BEC4E05-B26F-42A7-97BC-A538065C000C}' />
+    </worksheet>
+    <worksheet name='Churn by Tenure'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Churn by Tenure</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_churn.csv using sql' name='federated.1j3duu017arbrh1dxwnko1el29qr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1j3duu017arbrh1dxwnko1el29qr'>
+            <column caption='Churn Flag' datatype='integer' name='[Calculation_4336122073761480704]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Churn] = &quot;Yes&quot; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Tenure Group' datatype='string' name='[Calculation_4336122073761927170]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [tenure] &lt; 12 THEN &quot;Short&quot;&#10;ELSEIF [tenure] &lt;= 48 THEN &quot;Medium&quot;&#10;ELSE &quot;Long&quot;&#10;END' />
+            </column>
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_4336122073761927170]' derivation='None' name='[none:Calculation_4336122073761927170:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Churn]' derivation='None' name='[none:Churn:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[risk_level]' derivation='None' name='[none:risk_level:nk]' pivot='key' type='nominal' />
+            <column caption='Risk Level' datatype='string' name='[risk_level]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_4336122073761480704]' derivation='Sum' name='[sum:Calculation_4336122073761480704:qk]' pivot='key' type='quantitative' />
+            <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Calculation_4336122073761927170:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1j3duu017arbrh1dxwnko1el29qr].[sum:Calculation_4336122073761480704:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Contract:nk]</column>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:gender:nk]</column>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:risk_level:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Churn:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Calculation_4336122073761927170:nk]</rows>
+        <cols>[federated.1j3duu017arbrh1dxwnko1el29qr].[sum:Calculation_4336122073761480704:qk]</cols>
+      </table>
+      <simple-id uuid='{7B05D8C2-34A2-48F5-BF25-D5E12A9EABB8}' />
+    </worksheet>
+    <worksheet name='Customer Segment Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Customer Segment Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_churn.csv using sql' name='federated.1j3duu017arbrh1dxwnko1el29qr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1j3duu017arbrh1dxwnko1el29qr'>
+            <column caption='Churn Flag' datatype='integer' name='[Calculation_4336122073761480704]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Churn] = &quot;Yes&quot; THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Customer segment' datatype='string' name='[Calculation_4336122073762050051]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [MonthlyCharges] &gt; 80 THEN &quot;High Value&quot;&#10;ELSEIF [MonthlyCharges] &gt; 40 THEN &quot;Medium Value&quot;&#10;ELSE &quot;Low Value&quot;&#10;END' />
+            </column>
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column caption='Monthly Charges' datatype='real' name='[MonthlyCharges]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_4336122073762050051]' derivation='None' name='[none:Calculation_4336122073762050051:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Churn]' derivation='None' name='[none:Churn:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[risk_level]' derivation='None' name='[none:risk_level:nk]' pivot='key' type='nominal' />
+            <column caption='Risk Level' datatype='string' name='[risk_level]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_4336122073761480704]' derivation='Sum' name='[sum:Calculation_4336122073761480704:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Calculation_4336122073762050051:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1j3duu017arbrh1dxwnko1el29qr].[sum:Calculation_4336122073761480704:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Contract:nk]</column>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:gender:nk]</column>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:risk_level:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Churn:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Calculation_4336122073762050051:nk]</rows>
+        <cols>[federated.1j3duu017arbrh1dxwnko1el29qr].[sum:Calculation_4336122073761480704:qk]</cols>
+      </table>
+      <simple-id uuid='{C6E960E3-DE5A-4B09-A7CD-794DA1640787}' />
+    </worksheet>
+    <worksheet name='RISK SEGMENTATION'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Tableau Bold' fontsize='12'>Risk segmentation</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_churn.csv using sql' name='federated.1j3duu017arbrh1dxwnko1el29qr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1j3duu017arbrh1dxwnko1el29qr'>
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column-instance column='[customerID]' derivation='Count' name='[cnt:customerID:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer ID' datatype='string' name='[customerID]' role='dimension' type='nominal' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Churn]' derivation='None' name='[none:Churn:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[risk_level]' derivation='None' name='[none:risk_level:nk]' pivot='key' type='nominal' />
+            <column caption='Risk Level' datatype='string' name='[risk_level]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:risk_level:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1j3duu017arbrh1dxwnko1el29qr].[cnt:customerID:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Contract:nk]</column>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:gender:nk]</column>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:risk_level:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1j3duu017arbrh1dxwnko1el29qr].[cnt:customerID:qk]' value='54' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Churn:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:risk_level:nk]</rows>
+        <cols>[federated.1j3duu017arbrh1dxwnko1el29qr].[cnt:customerID:qk]</cols>
+      </table>
+      <simple-id uuid='{1A1ECC9F-041E-405A-B25C-CBCF37E4E0C5}' />
+    </worksheet>
+    <worksheet name='Revenue'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='22'>Revenue</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_churn.csv using sql' name='federated.1j3duu017arbrh1dxwnko1el29qr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1j3duu017arbrh1dxwnko1el29qr'>
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column caption='Monthly Charges' datatype='real' name='[MonthlyCharges]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[risk_level]' derivation='None' name='[none:risk_level:nk]' pivot='key' type='nominal' />
+            <column caption='Risk Level' datatype='string' name='[risk_level]' role='dimension' type='nominal' />
+            <column-instance column='[MonthlyCharges]' derivation='Sum' name='[sum:MonthlyCharges:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Contract:nk]</column>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:gender:nk]</column>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:risk_level:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1j3duu017arbrh1dxwnko1el29qr].[sum:MonthlyCharges:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='20'>&lt;</run>
+                <run fontsize='20'>[federated.1j3duu017arbrh1dxwnko1el29qr].[sum:MonthlyCharges:qk]</run>
+                <run fontsize='20'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CBE8EE55-35F3-4D98-8F7F-8D30B7AA9F5F}' />
+    </worksheet>
+    <worksheet name='Revenue by Churn'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Revenue by Churn</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_churn.csv using sql' name='federated.1j3duu017arbrh1dxwnko1el29qr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1j3duu017arbrh1dxwnko1el29qr'>
+            <column datatype='string' name='[Churn]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column caption='Monthly Charges' datatype='real' name='[MonthlyCharges]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Churn]' derivation='None' name='[none:Churn:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[risk_level]' derivation='None' name='[none:risk_level:nk]' pivot='key' type='nominal' />
+            <column caption='Risk Level' datatype='string' name='[risk_level]' role='dimension' type='nominal' />
+            <column-instance column='[MonthlyCharges]' derivation='Sum' name='[sum:MonthlyCharges:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Contract:nk]</column>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:gender:nk]</column>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:risk_level:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Churn:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1j3duu017arbrh1dxwnko1el29qr].[sum:MonthlyCharges:qk]</rows>
+        <cols>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Churn:nk]</cols>
+      </table>
+      <simple-id uuid='{BF0F6D34-398B-4C4A-AA88-518B2EC3D4F2}' />
+    </worksheet>
+    <worksheet name='Total Customers'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='22'>Total Customers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_churn.csv using sql' name='federated.1j3duu017arbrh1dxwnko1el29qr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1j3duu017arbrh1dxwnko1el29qr'>
+            <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+            <column-instance column='[customerID]' derivation='Count' name='[cnt:customerID:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer ID' datatype='string' name='[customerID]' role='dimension' type='nominal' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[risk_level]' derivation='None' name='[none:risk_level:nk]' pivot='key' type='nominal' />
+            <column caption='Risk Level' datatype='string' name='[risk_level]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Contract:nk]</column>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:gender:nk]</column>
+            <column>[federated.1j3duu017arbrh1dxwnko1el29qr].[none:risk_level:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='font-size' data-class='total' value='20' />
+            <format attr='font-size' data-class='subtotal' value='20' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' value='20' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1j3duu017arbrh1dxwnko1el29qr].[cnt:customerID:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='20'>&lt;</run>
+                <run fontsize='20'>[federated.1j3duu017arbrh1dxwnko1el29qr].[cnt:customerID:qk]</run>
+                <run fontsize='20'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3FBA01C0-27DD-4FB5-BBEE-5CFF25444AB3}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontsize='20'>Customer Churn Analysis Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='cleaned_churn.csv using sql' name='federated.1j3duu017arbrh1dxwnko1el29qr' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1j3duu017arbrh1dxwnko1el29qr'>
+        <column datatype='string' name='[Contract]' role='dimension' type='nominal' />
+        <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+        <column-instance column='[Contract]' derivation='None' name='[none:Contract:nk]' pivot='key' type='nominal' />
+        <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+        <column-instance column='[risk_level]' derivation='None' name='[none:risk_level:nk]' pivot='key' type='nominal' />
+        <column caption='Risk Level' datatype='string' name='[risk_level]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='10' param='horz' type-v2='layout-flow' w='98698' x='651' y='1042'>
+            <zone h='97916' id='5' param='vert' type-v2='layout-flow' w='74207' x='651' y='1042'>
+              <zone h='97916' id='6' type-v2='layout-basic' w='74207' x='651' y='1042'>
+                <zone h='97916' id='8' name='Churn by Contract' w='37070' x='651' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='97916' id='12' name='Churn by Tenure' w='37137' x='37721' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='301' h='97916' id='9' is-fixed='true' param='vert' type-v2='layout-flow' w='24491' x='74858' y='1042'>
+              <zone fixed-size='70' h='10157' id='11' is-fixed='true' name='Churn by Contract' pane-specification-id='0' param='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Churn:nk]' type-v2='color' w='24491' x='74858' y='1042'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='102' h='14323' id='16' is-fixed='true' mode='checklist' name='Churn by Contract' param='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Contract:nk]' type-v2='filter' values='database' w='24491' x='74858' y='11199'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='90' h='12761' id='17' is-fixed='true' name='Churn by Contract' param='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:gender:nk]' type-v2='filter' values='database' w='24491' x='74858' y='25522'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='109' h='15235' id='18' is-fixed='true' name='Churn by Contract' param='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:risk_level:nk]' type-v2='filter' values='database' w='24491' x='74858' y='38283'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='32552' id='14' name='RISK SEGMENTATION' w='33279' x='38568' y='30339' />
+        <zone h='33333' id='13' name='Revenue by Churn' w='33275' x='2875' y='30078' />
+        <zone fixed-size='646' h='27604' id='15' is-fixed='true' name='Customer Segment Analysis' w='72474' x='784' y='69922'>
+          <layout-cache minwidth='200' type-h='fixed' type-w='scalable' />
+        </zone>
+        <zone fixed-size='37' h='5859' id='7' is-fixed='true' type-v2='title' w='8788' x='2685' y='4297' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontsize='20'>Customer Churn Analysis Dashboard</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1700' minheight='1700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='21' param='vert' type-v2='layout-flow' w='98698' x='651' y='1042'>
+                <zone h='5860' id='7' type-v2='title' w='74207' x='651' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='102' h='14323' id='16' mode='checkdropdown' name='Churn by Contract' param='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Contract:nk]' type-v2='filter' values='database' w='24491' x='74858' y='11199'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='90' h='12761' id='17' mode='checkdropdown' name='Churn by Contract' param='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:gender:nk]' type-v2='filter' values='database' w='24491' x='74858' y='25522'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='109' h='15235' id='18' mode='checkdropdown' name='Churn by Contract' param='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:risk_level:nk]' type-v2='filter' values='database' w='24491' x='74858' y='38283'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='92056' id='8' is-fixed='true' name='Churn by Contract' w='37079' x='651' y='6902'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='70' h='10157' id='11' name='Churn by Contract' pane-specification-id='0' param='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Churn:nk]' type-v2='color' w='24491' x='74858' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='92056' id='12' is-fixed='true' name='Churn by Tenure' w='37128' x='37730' y='6902'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='266' h='33333' id='13' is-fixed='true' name='Revenue by Churn' w='33275' x='2875' y='30078'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='260' h='32552' id='14' is-fixed='true' name='RISK SEGMENTATION' w='33279' x='38568' y='30339'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='221' h='27604' id='15' is-fixed='true' name='Customer Segment Analysis' w='72474' x='784' y='69922'>
+                  <layout-cache minwidth='200' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9043263B-3174-4D3E-B336-778E18819BEB}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Total Customers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A60231E8-EE5D-4456-A583-068EBACFEE03}' />
+    </window>
+    <window class='worksheet' name='Churn Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6BA1A593-600D-4808-9BC0-F7E56A087D75}' />
+    </window>
+    <window class='worksheet' name='Revenue'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{05469A0D-1929-4C19-85A0-83BAC0C5EA48}' />
+    </window>
+    <window class='worksheet' name='Churn Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Churn:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{68AB338E-2DEB-40CF-9B8B-49AF24B43A5C}' />
+    </window>
+    <window class='worksheet' name='Churn by Contract'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:risk_level:nk]' type='filter' />
+            <card param='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:gender:nk]' type='filter' />
+            <card param='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Contract:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Churn:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BB496DCE-20E1-4D46-924A-DECAF458713C}' />
+    </window>
+    <window class='worksheet' name='Churn by Tenure'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Churn:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E23E958F-304C-4F39-8AFA-6801909D4347}' />
+    </window>
+    <window class='worksheet' name='Revenue by Churn'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Churn:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0F8041FC-34EF-447C-B1FC-1871475751E5}' />
+    </window>
+    <window class='worksheet' name='RISK SEGMENTATION'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Churn:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{06CA18E1-47C4-474E-BB52-8D9538D66C85}' />
+    </window>
+    <window class='worksheet' name='Customer Segment Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1j3duu017arbrh1dxwnko1el29qr].[none:Churn:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6DC81664-A606-42E2-BD79-84E0461A6798}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard '>
+      <viewpoints>
+        <viewpoint name='Churn by Contract' />
+        <viewpoint name='Churn by Tenure' />
+        <viewpoint name='Customer Segment Analysis'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='RISK SEGMENTATION'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue by Churn'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='7' />
+      <simple-id uuid='{F7489C6D-1302-45E3-8B5C-83F5786727C7}' />
+    </window>
+  </windows>
+</workbook>
